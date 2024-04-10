@@ -1,0 +1,67 @@
+COMANDOS GIT CMD
+
+clear -> limpa o histórico de comando
+cd -> trocar de diretorio
+exemplo: cd "Users/erica/pasta1/pastalouca"
+
+ 
+git init -> inicializa o diretorio
+
+ 
+git status -> mostra o status do repositório
+
+ 
+git rn --cached "arquivos" -> O git deixa de trackear os arquivos especificados 
+
+ 
+git commit -> faz o commit
+git commit -m "mensagem" -> Faz o commit com uma mensagem
+
+ 
+git diff -> mostra o que foi alterado
+
+ 
+git add "arquivo.extensao" -> adiciona ao estado de staged, que pode ser então commitado
+
+ 
+git log -> mostra o historico de commits
+
+ 
+git commit -a -m "Mensagem" -> Faz o commit direto, sem passar pelo staging
+
+
+git rm "arquivo.extensao" -> remove o arquivo do ramo atual
+
+
+git restore "arquivo.extensao" -> restaura o arquivo
+
+
+git mv "arquivo.extensao" "novonomedoarquivo.extensao" -> renomeia o arquivo
+
+git commit -m "Mensagem nova" --amend -> Altera a mensagem do ultimo commit lançado, ele faz um amend para alterar
+
+git log -p -> Mostra o historico de commit de forma detalhada
+
+git reset --hard "codigo da versao anterior selecionada" -> volta para a versao especificada de forma definitiva sem deixar vestigios das posteriores
+
+git help ->mostra os comandos git
+git help "comando" ->mostra o que o comando especificado faz
+
+
+git alias - é tipo um atalho de comandos git que eu posso criar para executar outros comandos, tipo um atalho mesmo
+exemplo1:
+git config alias."nomedocomando" "comando a ser executado"
+exemplo2:
+git config alias."log1" "log --oneline"
+Exemplo global:
+git config global alias."nomedocomando" "log --oneline" -> esse atalho estará disponível para todos os computadores que estão usando o repositório
+
+git branch -> mostra as branchs disponiveis e a branch que se encontra
+
+git branch "nomedanovabranch" -> adiciona uma branch
+
+git switch "nomedabranch" -> troca a branch atual para a branch especificada
+
+git merge -m "mensagem sobre a nova merge" branch_a_ser_emergida -> une a branch especificada à branch atual
+
+git branch -d "nomedabrenchaserdeletada" -> deleta a branch especificada
